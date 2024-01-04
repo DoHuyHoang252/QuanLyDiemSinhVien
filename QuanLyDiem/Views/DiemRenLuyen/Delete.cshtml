@@ -1,0 +1,47 @@
+@model QuanLyDiem.Models.DiemRenLuyen
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Xóa bản ghi ĐRL</h3>
+
+<div>
+    <hr />
+    <dl class="w3-card w3-white container w3-round-large" style="width:60%">
+        <div class="row">
+            <dt class = "col-sm-3">
+                Mã sinh viên
+            </dt>
+            <dd class = "col-sm-3">
+                @Html.DisplayFor(model => model.MaSinhVien)
+            </dd>
+            <dt class = "col-sm-3">
+                Tên sinh viên
+            </dt>
+            <dd class = "col-sm-3">
+                @Html.DisplayFor(model => model.SinhVien.TenSinhVien)
+            </dd>
+        </div>
+        <div class="row">
+            <dt class = "col-sm-3">
+                Học kỳ
+            </dt>
+            <dd class = "col-sm-3">
+                @Html.DisplayFor(model => model.HocKy.TenHocKy)
+            </dd>
+            <dt class = "col-sm-3">
+                ĐRL
+            </dt>
+            <dd class = "col-sm-3">
+                @Html.DisplayFor(model => model.DiemRL)
+            </dd>
+        </div>
+    </dl>
+    <h4 class="w3-center">Bạn có chắc chắn muốn xóa ĐRL này?</h4>
+    <form class="w3-center" asp-action="Delete">
+        <input type="hidden" asp-for="MaDiemRenLuyen" />
+        <input type="submit" value="Xóa" class="btn w3-medium btn-danger" /> |
+        <a asp-action="Index">Hủy</a>
+    </form>
+</div>

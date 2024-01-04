@@ -1,0 +1,60 @@
+@model QuanLyDiem.Models.BangDiem
+
+@{
+    Layout = null;
+}
+
+<div>
+    <h3>@Html.DisplayFor(model => model.HocPhan.TenHocPhan)</h3>
+    <hr />
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="column_name" style="width:40%">
+                    Tên thành phần
+                </th>
+                <th class="column_name" style="width:30%">
+                    Trọng số(%)
+                </th>
+                <th class="column_name" style="width:30%">
+                    Điểm thành phần
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >
+                    Điểm C
+                </td>
+                <td>
+                    10
+                </td>
+                <td >
+                    @Html.DisplayFor(model => model.DiemChuyenCan)
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    Điểm B
+                </td>
+                <td>
+                    30
+                </td>
+                <td >
+                    @Html.DisplayFor(model => model.DiemKiemTra)
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    Điểm A
+                </td>
+                <td>
+                    60
+                </td>
+                <td >
+                    @Html.DisplayFor(model => model.DiemThi)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

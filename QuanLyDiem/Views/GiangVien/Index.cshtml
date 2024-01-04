@@ -1,0 +1,129 @@
+@model IEnumerable<QuanLyDiem.Models.GiangVien>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Danh sách giảng viên</h3>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="w3-right"><a class="btn w3-round-large w3-medium btn btn-outline-info" asp-action="Create">Tạo mới giảng viên</a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="pageSizeDropdown">Số bản ghi trên mỗi trang:</label>
+                        @Html.DropDownList("PageSize", new List<SelectListItem>
+                        {
+                        new SelectListItem { Text = "5", Value = "5" },
+                        new SelectListItem { Text = "10", Value = "10" },
+                        new SelectListItem { Text = "20", Value = "20" },
+                        new SelectListItem { Text = "50", Value = "50" },
+                        new SelectListItem { Text = "Tất cả", Value = "-1" },
+                        // Thêm các tùy chọn khác tùy theo yêu cầu của bạn
+                        }, new { id = "pageSizeDropdown", @class = "w3-border-blue", onchange = "changePageSize()"})
+                    </div>
+                    <div class="col-md-6">
+                        <div class="w3-right">
+                            <form asp-controller="GiangVien" asp-action="Index" method="get">
+                                <p>
+                                    <input class="btn w3-text-black btn-outline-info w3-medium w3-round-large" type="text" name="searchText" />
+                                    <input class="btn btn-outline-info w3-medium w3-round-large" type="submit" value="Tìm kiếm" />
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>    
+                <div class="table-responsive m-t-40 ">
+                    <table id="myTable" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable(0)" class="column_name" style="width:20%">
+                                    Tên giảng viên
+                                </th>
+                                <th onclick="sortTable(1)" class="column_name" style="width:10%">
+                                    Giới tính
+                                </th>
+                                <th onclick="sortTable(2)" class="column_name" style="width:10%">
+                                    Ngày sinh
+                                </th>
+                                <th onclick="sortTable(3)" class="column_name" style="width:20%">
+                                    Khoa
+                                </th>
+                                <th onclick="sortTable(4)" class="column_name" style="width:20%">
+                                    Chuyên ngành
+                                </th>
+                                <th style="width:13%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                    @foreach (var item in Model) {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TenGiangVien)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.GioiTinh)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NgaySinh)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Khoa.TenKhoa)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ChuyenNganh.TenChuyenNganh)
+                                </td>
+                            <td>
+                                <a class="btn btn-outline-info w3-medium w3-round-large" asp-action="Edit" asp-route-id="@item.MaGiangVien">Sửa</a>
+                                <a class="btn btn-outline-info w3-medium w3-round-large" asp-action="Delete"  asp-route-id="@item.MaGiangVien">Xóa</a>
+                            </td>
+                            </tr>
+                    }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-md-6 text-center">
+                        <p>
+                            @if (!string.IsNullOrEmpty(ViewBag.SearchTerm))
+                            {
+                                <span>Kết quả tìm kiếm cho: "<strong>@ViewBag.SearchTerm</strong>"</span>  
+                            }
+                            else
+                            {
+                                <p>Hiển thị @((ViewBag.CurrentPage - 1) * ViewBag.pageSize + 1 ) đến @((ViewBag.CurrentPage - 1) * ViewBag.pageSize + Model.Count()) của @ViewBag.TotalCount bản ghi</p>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <div class="pagination-container">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page, pageSize = ViewBag.PageSize }), new X.PagedList.Web.Common.PagedListRenderOptions { LiElementClasses = new[] { "page-item" }, PageClasses = new[] { "page-link" } })
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function searchData() {
+        var searchTerm = document.getElementById("searchBox").value;
+        var selectedValue = document.getElementById("pageSizeDropdown").value;
+        window.location.href = "/GiangVien/Index?page=1&pageSize=" + selectedValue + "&search=" + encodeURIComponent(searchTerm);
+    }
+
+    function changePageSize() {
+        var selectedValue = document.getElementById("pageSizeDropdown").value;
+        window.location.href = "/GiangVien/Index?page=1&pageSize=" + selectedValue ;
+    }
+</script>

@@ -1,0 +1,23 @@
+<nav class="w3-white w3-top w3-card w3-round-large navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" style="left:0; position:fixed;">
+    <div class="container-fluid">
+        <a href="/" class="d-flex align-items-center link-dark text-decoration-none ">
+            <img src="/images/logo.png" alt="" style="width:30px; height:24px;">
+            <span class="fs-5 fw-semibold">Quản Lý Điểm Sinh Viên</span>
+        </a>
+        <button id="toggleSidebar" style="border:none; background-color:white;"><i class="bi bi-list"></i></button>
+        <div class="w3-dropdown-hover ">   
+            @if (User.Identity.IsAuthenticated)
+            {
+            <span>Xin chào, @User.Identity.Name</span>
+            }
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="w3-center bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            <div class="w3-dropdown-content w3-bar-block w3-border w3-round-large w3-left w3-medium" style="right:2px">
+                <a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="User" asp-action="Profile">Hồ sơ người dùng</a></li>
+                <a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="Home" asp-action="Logout">Đăng xuất</a></li>
+            </div>
+        </div>
+    </div>
+</nav>

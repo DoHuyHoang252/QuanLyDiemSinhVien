@@ -1,0 +1,80 @@
+<div class="w3-card w3-white w3-sidebar w3-round-large flex-shrink-0 p-3" style="top:56px; height:95%; width:230px" >
+    <span class="fs-5 fw-semibold d-flex align-items-center pb-3 mb-3 border-bottom">Menu</span>    
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button type="button" class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg>Sinh viên
+        </button>
+        <div class="collapse" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 medium">
+            <li ><a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="SinhVien" asp-action="Index">Danh sách sinh viên</a></li>
+            <li><a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="SinhVien" asp-action="Create">Tạo mới sinh viên</a></li>
+            <li><a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="YeuCauPhucKhao" asp-action="Index">Danh sách phúc khảo</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button type="button" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg>Giảng viên
+        </button>
+        <div class="collapse " id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 medium">
+            <li ><a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="GiangVien" asp-action="Index">Danh sách giảng viên</a></li>
+            <li><a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="GiangVien" asp-action="Create">Tạo mới giảng viên</a></li>
+            <li><a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="YeuCauSuaDiem" asp-action="Index">Danh sách YCSĐ</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg>Quản lý điểm
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 medium">
+            <li><a class="nav-link text-dark link-dark link-underline-opacity-0 rounded" asp-area="" asp-controller="BangDiem" asp-action="Index">Bảng Điểm</a></li>
+            <li><a class="nav-link text-dark link-dark link-underline-opacity-0 rounded" asp-area="" asp-controller="BangDiem" asp-action="Create">Tạo mới điểm</a></li>
+            <li><a class="nav-link text-dark link-dark link-underline-opacity-0 rounded" asp-area="" asp-controller="DiemRenLuyen" asp-action="Index">Điểm rèn luyện</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#danhmuc-collapse" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg>Quản lý danh mục
+        </button>
+        <div class="collapse" id="danhmuc-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 medium">
+            <li><a class="nav-link text-dark link-dark link-underline-opacity-0 rounded" asp-area="" asp-controller="KhoaHoc" asp-action="Index">Khóa Học</a></li>
+            <li><a class="nav-link text-dark link-dark link-underline-opacity-0 rounded" asp-area="" asp-controller="Khoa" asp-action="Index">Khoa</a></li>
+            <li><a class="nav-link text-dark link-dark link-underline-opacity-0 rounded" asp-area="" asp-controller="ChuyenNganh" asp-action="Index">Chuyên Ngành</a></li>
+            <li><a class="nav-link text-dark link-dark link-underline-opacity-0 rounded" asp-area="" asp-controller="HocKy" asp-action="Index">Học Kỳ</a></li>
+            <li><a class="nav-link text-dark link-dark link-underline-opacity-0 rounded" asp-area="" asp-controller="HocPhan" asp-action="Index">Học Phần</a></li>
+            <li><a class="nav-link text-dark link-dark link-underline-opacity-0 rounded" asp-area="" asp-controller="LopHocPhan" asp-action="Index">Lớp Học Phần</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg>Tài khoản
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 medium">
+            <li ><a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="User" asp-action="Create">Tạo mới tài khoản</a></li>
+            <li ><a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="User" asp-action="Index">Danh mục tài khoản</a></li>
+            <li><a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="User" asp-action="Profile">Hồ sơ người dùng</a></li>
+            <li><a class="nav-link text-dark link-dark rounded" asp-area="" asp-controller="Home" asp-action="Logout">Đăng xuất</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+</div>

@@ -1,0 +1,48 @@
+@model QuanLyDiem.Models.User
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h3>Tạo mới tài khoản</h3>
+
+<div class="row">
+    <div class=" w3-card w3-white container w3-round-large" style="width:50%">
+        <form asp-action="Create">
+            <h4 class="w3-center">Nhập thông tin tài khoản</h4>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-row" style="display: flex; justify-content: center;">
+                <div class="form-group col-md-6" >
+                    <label class="control-label"> Username</label>
+                    <input asp-for="username" class="form-control" />
+                    <span asp-validation-for="username" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label  class="control-label">Password</label>
+                    <input asp-for="password" class="form-control" />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="control-label">Họ</label>
+                    <input asp-for="lastName" class="form-control" />
+                    <span asp-validation-for="lastName" class="text-danger"></span>
+                </div>
+                 <div class="form-group col-md-6">
+                    <label class="control-label">Tên</label>
+                    <input asp-for="firstName" class="form-control" />
+                    <span asp-validation-for="firstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-outline-info" /> |
+                <a asp-action="Index">Trở về</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

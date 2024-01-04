@@ -1,0 +1,315 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QuanLyDiem
+build_property.RootNamespace = QuanLyDiem
+build_property.ProjectDir = D:\Theory\Word - Subjects\BTL_PTPMQL\BTL-PhanMemQuanLyDiemSinhVien\BTL-PhanMemQuanLyDiemSinhVien\QuanLyDiem\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Theory\Word - Subjects\BTL_PTPMQL\BTL-PhanMemQuanLyDiemSinhVien\BTL-PhanMemQuanLyDiemSinhVien\QuanLyDiem
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/BangDiem/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFuZ0RpZW1cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/BangDiem/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFuZ0RpZW1cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/BangDiem/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFuZ0RpZW1cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/BangDiem/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFuZ0RpZW1cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/BangDiem/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFuZ0RpZW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/ChuyenNganh/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1eWVuTmdhbmhcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/ChuyenNganh/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1eWVuTmdhbmhcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/ChuyenNganh/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1eWVuTmdhbmhcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/ChuyenNganh/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1eWVuTmdhbmhcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/DiemRenLuyen/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbVJlbkx1eWVuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/DiemRenLuyen/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbVJlbkx1eWVuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/DiemRenLuyen/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbVJlbkx1eWVuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/DiemRenLuyen/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbVJlbkx1eWVuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/DiemRenLuyen/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbVJlbkx1eWVuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/GiangVien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhbmdWaWVuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/GiangVien/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhbmdWaWVuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/GiangVien/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhbmdWaWVuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/GiangVien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhbmdWaWVuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/GiangVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhbmdWaWVuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/HocKy/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jS3lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/HocKy/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jS3lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/HocKy/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jS3lcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/HocKy/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jS3lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/HocKy/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jS3lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/HocPhan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jUGhhblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/HocPhan/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jUGhhblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/HocPhan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jUGhhblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/HocPhan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9jUGhhblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/KhoaHoc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/KhoaHoc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/KhoaHoc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/KhoaHoc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYUhvY1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Khoa/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Khoa/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Khoa/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Khoa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/LopHocPhan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wSG9jUGhhblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/LopHocPhan/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wSG9jUGhhblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/LopHocPhan/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wSG9jUGhhblxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/LopHocPhan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wSG9jUGhhblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/LopHocPhan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9wSG9jUGhhblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Shared/_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/SinhVien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/SinhVien/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/SinhVien/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/SinhVien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/SinhVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/User/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/YeuCauPhucKhao/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1Q2F1UGh1Y0toYW9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/YeuCauPhucKhao/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1Q2F1UGh1Y0toYW9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/YeuCauPhucKhao/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1Q2F1UGh1Y0toYW9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/YeuCauPhucKhao/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1Q2F1UGh1Y0toYW9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/YeuCauPhucKhao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1Q2F1UGh1Y0toYW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/YeuCauSuaDiem/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1Q2F1U3VhRGllbVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/YeuCauSuaDiem/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1Q2F1U3VhRGllbVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/YeuCauSuaDiem/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1Q2F1U3VhRGllbVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/YeuCauSuaDiem/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1Q2F1U3VhRGllbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/YeuCauSuaDiem/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWWV1Q2F1U3VhRGllbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Theory/Word - Subjects/BTL_PTPMQL/BTL-PhanMemQuanLyDiemSinhVien/BTL-PhanMemQuanLyDiemSinhVien/QuanLyDiem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-utox2qx8u7

@@ -1,0 +1,33 @@
+@model QuanLyDiem.Models.ChuyenNganh
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Xóa chuyên ngành</h3>
+
+<div>
+    <hr />
+    <dl class="w3-card w3-white container w3-round-large" style="width:50%">
+        <div class="row">
+            <dt class = "col-sm-4">
+                Tên chuyên ngành
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.TenChuyenNganh)
+            </dd>
+            <dt class = "col-sm-4">
+                Khoa
+            </dt>
+            <dd class = "col-sm-6 ">
+                @Html.DisplayFor(model => model.Khoa.TenKhoa)
+            </dd>
+        </div>
+    </dl>
+    <h4 class="w3-center">Bạn có chắc chắn muốn xóa chuyên ngành này?</h4>
+    <form class="w3-center" asp-action="Delete">
+        <input type="hidden" asp-for="MaChuyenNganh" />
+        <input type="submit" value="Xóa" class="btn w3-medium btn-danger" /> |
+        <a asp-action="Index">Hủy</a>
+    </form>
+</div>

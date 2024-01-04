@@ -1,0 +1,106 @@
+@model QuanLyDiem.Models.LopHocPhan
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h3>Bảng điểm lớp học</h3>
+
+<hr>
+<a class="w3-right btn btn-outline-info w3-round-large w3-medium" asp-action="Index">Trở về</a>
+<div style="display:flex; justify-content:center;">
+    <div class="row" style="width:60%">
+        <div>
+            <dl class="row">
+                <dt class="col-sm-5">
+                    Mã lớp học phần
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.MaLopHocPhan)
+                </dd>
+                <dt class="col-sm-5">
+                    Tên lớp học phần
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.TenLopHocPhan)
+                </dd>
+                <dt class="col-sm-5">
+                    Học phần
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.HocPhan.TenHocPhan)
+                </dd>
+                <dt class="col-sm-5">
+                    Giảng viên
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.GiangVien.TenGiangVien)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive m-t-40 ">
+                    <table id="myTable" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable(0)" style="width:14%" class="column_name">
+                                    Mã sinh viên
+                                </th>
+                                <th onclick="sortTable(1)" style="width:14%" class="column_name">
+                                    Tên sinh viên
+                                </th>
+                                <th onclick="sortTable(2)" style="width:6%" class="column_name">
+                                    Điểm C
+                                </th>
+                                <th onclick="sortTable(3)" style="width:6%" class="column_name">
+                                    Điểm B
+                                </th>
+                                <th onclick="sortTable(4)" style="width:6%" class="column_name">
+                                    Điểm A
+                                </th>
+                                <th onclick="sortTable(5)" style="width:6%" class="column_name">
+                                    Điểm TK(10)
+                                </th>
+                                <th onclick="sortTable(6)" style="width:6%" class="column_name">
+                                    Điểm TK(4)
+                                </th>
+                                <th onclick="sortTable(7)" style="width:6%" class="column_name">
+                                    Điểm TK(C)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var chiTiet in Model.BangDiem)
+                            {
+                                <tr>
+                                    <td>@chiTiet.MaSinhVien</td>
+                                    <td>@chiTiet.TenSinhVien</td>
+                                    <td>@chiTiet.DiemChuyenCan</td>
+                                    <td>@chiTiet.DiemKiemTra</td>
+                                    <td>@chiTiet.DiemThi</td>
+                                    <td>@chiTiet.DiemTong</td>
+                                    <td>@chiTiet.DiemTongHe4</td>
+                                    <td>@chiTiet.DiemChu</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <br>
+                    <div class="pagination-container">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                                <a class="btn w3-round-large w3-medium btn btn-outline-info "
+                                    asp-action="DownloadBangDiemLop" asp-route-id="@Model.MaLopHocPhan">Tải về danh sách</a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

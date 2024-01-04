@@ -1,0 +1,65 @@
+@model QuanLyDiem.Models.SinhVien
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h3>Sửa thông tin sinh viên</h3>
+
+<hr />
+
+<div class="row">
+    <div class=" w3-card w3-white container w3-round-large" style="width:60%">
+        <form asp-action="Edit">
+            <h4 class="w3-center">Thông tin sinh viên</h4>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaSinhVien" />
+            <div class="form-row" style="display: flex; justify-content: center;">
+                <div class="form-group col-md-6" >
+                    <label class="control-label">tên sinh viên</label>
+                    <input asp-for="TenSinhVien" class="form-control" />
+                    <span asp-validation-for="TenSinhVien" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3" >
+                    <label class="control-label">Giới tính</label>
+                    <select asp-for="GioiTinh" class ="form-control">
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+                    <span asp-validation-for="GioiTinh" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3" >
+                    <label class="control-label">Ngày sinh</label>
+                    <input asp-for="NgaySinh" class="form-control" />
+                    <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label class="control-label">Tình trạng</label>
+                    <input asp-for="TinhTrang" class="form-control" />
+                    <span asp-validation-for="TinhTrang" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="control-label">Chuyên ngành</label>
+                    <select asp-for="MaChuyenNganh" class="form-control" asp-items="ViewBag.MaChuyenNganh"></select>
+                    <span asp-validation-for="MaChuyenNganh" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label class="control-label">Khóa học</label>
+                    <select asp-for="MaKhoaHoc" class="form-control" asp-items="ViewBag.MaKhoaHoc"></select>
+                    <span asp-validation-for="MaKhoaHoc" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn w3-medium btn-outline-info" /> |
+                <a asp-action="Index">Trở về</a>
+            </div>
+        </form>
+    </div>
+</div>  
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

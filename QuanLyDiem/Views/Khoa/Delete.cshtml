@@ -1,0 +1,35 @@
+@model QuanLyDiem.Models.Khoa
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Xóa khoa</h3>
+
+<div>
+    <hr />
+    <dl class="w3-card w3-white container w3-round-large" style="width:50%;">
+        <div class="row">
+            <dt class = "col-sm-4">
+                Mã khoa
+            </dt>
+            <dd class = "col-sm-4">
+                @Html.DisplayFor(model => model.MaKhoa)
+            </dd>
+        </div>
+        <div class="row">
+            <dt class = "col-sm-4">
+                Tên khoa
+            </dt>
+            <dd class = "col-sm-4">
+                @Html.DisplayFor(model => model.TenKhoa)
+            </dd>
+        </div>
+    </dl>
+    <h4 class="w3-center">Bạn có chắc chắn muốn xóa khoa này?</h4>
+    <form class="w3-center" asp-action="Delete">
+        <input type="hidden" asp-for="MaKhoa" />
+        <input type="submit" value="Xóa" class="btn btn-danger w3-medium" /> |
+        <a asp-action="Index">Hủy</a>
+    </form>
+</div>

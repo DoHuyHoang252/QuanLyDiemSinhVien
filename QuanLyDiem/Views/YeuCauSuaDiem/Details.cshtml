@@ -1,0 +1,38 @@
+@model QuanLyDiem.Models.YeuCauSuaDiem
+
+@{
+    ViewData["Title"] = "Details";
+}
+@{
+    Layout = null;
+}
+<div>
+    <h3>@Html.DisplayFor(model => model.SinhVien.TenSinhVien) - @Html.DisplayFor(model => model.HocPhan.TenHocPhan)</h3>
+    <dl class="row w3-card w3-center">
+
+        <dt class = "col-sm-6">
+            Điểm C
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.DiemChuyenCan)
+        </dd>
+        <dt class = "col-sm-6">
+            Điểm B
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.DiemKiemTra)
+        </dd>
+        <dt class = "col-sm-6">
+            Điểm C mới
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.DiemChuyenCanMoi)
+        </dd>
+        <dt class = "col-sm-6">
+            Điểm B mới
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.DiemKiemTraMoi)
+        </dd>
+    </dl>
+</div>

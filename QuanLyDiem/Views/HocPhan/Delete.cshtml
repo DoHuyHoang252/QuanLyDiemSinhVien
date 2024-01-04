@@ -1,0 +1,41 @@
+@model QuanLyDiem.Models.HocPhan
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Xóa học phần</h3>
+
+<div>
+    <hr />
+    <dl class="w3-card w3-white container w3-round-large" style="width:60%">
+        <div class="row">
+            <dt class = "col-sm-3">
+                Học phần
+            </dt>
+            <dd class = "col-sm-3">
+                @Html.DisplayFor(model => model.TenHocPhan)
+            </dd>
+            <dt class = "col-sm-3">
+                Số tín chỉ
+            </dt>
+            <dd class = "col-sm-3">
+                @Html.DisplayFor(model => model.SoTinChi)
+            </dd>
+        </div>
+        <div class="row">
+            <dt class = "col-sm-3">
+                Chuyên ngành
+            </dt>
+            <dd class = "col-sm-3">
+                @Html.DisplayFor(model => model.ChuyenNganh.TenChuyenNganh)
+            </dd>
+        </div>
+    </dl>
+    <h4 class="w3-center">Bạn có chắc chắn muốn xóa học phần này?</h4>
+    <form class="w3-center" asp-action="Delete">
+        <input type="hidden" asp-for="MaHocPhan" />
+        <input type="submit" value="Xóa" class="btn w3-medium btn-danger" /> |
+        <a asp-action="Index">Hủy</a>
+    </form>
+</div>

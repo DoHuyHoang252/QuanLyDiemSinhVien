@@ -1,0 +1,149 @@
+@model QuanLyDiem.Models.SinhVien
+@using QuanLyDiem.Data;
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h3>Bảng điểm cá nhân</h3>
+
+<hr>
+<a class="w3-right btn btn-outline-info w3-medium w3-round-large " asp-action="Index">Trở về</a>
+<div style="display:flex; justify-content:center;">
+    <div class="row" style="width:60%">
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-5">
+                    Mã sinh viên
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.MaSinhVien)
+                </dd>
+                <dt class="col-sm-5">
+                    Tên sinh viên
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.TenSinhVien)
+                </dd>
+                <dt class="col-sm-5">
+                    Chuyên ngành
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.ChuyenNganh.TenChuyenNganh)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-6">
+            <dl class="row">
+                <dt class="col-sm-10">
+                    Điểm trung bình tích lũy hệ 10
+                </dt>
+                <dd class="col-sm-2">
+                    @Html.DisplayFor(model => model.DTBTLHe10)
+                </dd>
+                <dt class="col-sm-10">
+                    Điểm trung bình tích lũy hệ 4
+                </dt>
+                <dd class="col-sm-2">
+                    @Html.DisplayFor(model => model.DTBTLHe4)
+                </dd>
+                <dt class="col-sm-10">
+                    Tổng số tín chỉ tích lũy
+                </dt>
+                <dd class="col-sm-2">
+                    @Html.DisplayFor(model => model.SoTinChiTichLuy)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+@{
+    // Thêm biến HocKyTruoc để kiểm tra khi bước từng dòng
+    string hocKyTruoc = null;
+}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive m-t-40 ">
+                    <table  class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable(0)" style="width:14%" class="column_name">
+                                    Mã HP
+                                </th>
+                                <th onclick="sortTable(1)" style="width:14%" class="column_name">
+                                    Nhóm HP
+                                </th>
+                                <th onclick="sortTable(2)" style="width:30%" class="column_name">
+                                    Tên học phần
+                                </th>
+                                <th onclick="sortTable(3)" style="width:6%" class="column_name">
+                                    Số TC
+                                </th>
+                                <th onclick="sortTable(4)" style="width:6%" class="column_name">
+                                    Điểm C
+                                </th>
+                                <th onclick="sortTable(5)" style="width:6%" class="column_name">
+                                    Điểm B
+                                </th>
+                                <th onclick="sortTable(6)" style="width:6%" class="column_name">
+                                    Điểm A
+                                </th>
+                                <th onclick="sortTable(7)" style="width:6%" class="column_name">
+                                    Điểm TK(10)
+                                </th>
+                                <th onclick="sortTable(8)" style="width:6%" class="column_name">
+                                    Điểm TK(4)
+                                </th>
+                                <th onclick="sortTable(9)" style="width:6%" class="column_name">
+                                    Điểm TK(C)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var hockyGroup in Model.BangDiem?.GroupBy(bd => bd.LopHocPhan?.HocKy?.MaHocKy))
+                            {
+                                if (hockyGroup != null && hockyGroup.Any())
+                                {
+                                    foreach (var chiTiet in hockyGroup)
+                                    {
+                                        if (hocKyTruoc != chiTiet.LopHocPhan.HocKy.MaHocKy)
+                                        {
+                                            <tr>
+                                                <td colspan="10">
+                                                    <strong>@chiTiet.LopHocPhan.HocKy.TenHocKy</strong>
+                                                </td>
+                                            </tr>
+                                            hocKyTruoc = chiTiet.LopHocPhan.HocKy.MaHocKy;
+                                        }
+                                        <tr>
+                                            <td>@chiTiet.MaHocPhan</td>
+                                            <td>@chiTiet.MaLopHocPhan</td>
+                                            <td>@chiTiet.TenHocPhan</td>
+                                            <td>@chiTiet.SoTinChi</td>
+                                            <td>@chiTiet.DiemChuyenCan</td>
+                                            <td>@chiTiet.DiemKiemTra</td>
+                                            <td>@chiTiet.DiemThi</td>
+                                            <td>@chiTiet.DiemTong</td>
+                                            <td>@chiTiet.DiemTongHe4</td>
+                                            <td>@chiTiet.DiemChu</td>
+                                        </tr>
+                                    }
+
+                                    foreach (var diemRenLuyen in Model.DiemRenLuyen?.Where(dr => dr.MaHocKy == hockyGroup.Key))
+                                    {
+                                        <tr>
+                                            <td colspan="10"> 
+                                                <strong>Điểm rèn luyện: @diemRenLuyen.DiemRL</strong>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

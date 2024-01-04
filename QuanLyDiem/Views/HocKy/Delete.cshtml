@@ -1,0 +1,33 @@
+@model QuanLyDiem.Models.HocKy
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Xóa học kỳ</h3>
+
+<div>
+    <hr />
+    <dl class="w3-card w3-white container w3-round-large" style="width:60%">
+        <div class="row">
+            <dt class = "col-sm-3">
+                Học kỳ
+            </dt>
+            <dd class = "col-sm-3">
+                @Html.DisplayFor(model => model.TenHocKy)
+            </dd>
+            <dt class = "col-sm-3">
+                Khóa học
+            </dt>
+            <dd class = "col-sm-3">
+                @Html.DisplayFor(model => model.KhoaHoc.TenKhoaHoc)
+            </dd>
+        </div>
+    </dl>
+    <h4 class="w3-center">Bạn có chắc chắn muốn xóa học kỳ này?</h4>
+    <form class="w3-center" asp-action="Delete">
+        <input type="hidden" asp-for="MaHocKy" />
+        <input type="submit" value="Xóa" class="btn w3-medium btn-danger" /> |
+        <a asp-action="Index">Hủy</a>
+    </form>
+</div>

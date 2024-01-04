@@ -1,0 +1,67 @@
+@model QuanLyDiem.Models.LopHocPhan
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h3>Tạo mới lớp học phần</h3>
+
+<hr>
+    <div class=" w3-card w3-white container w3-round-large" style="width:50%">
+        <form asp-action="Upload"  enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="col-md-8">
+                    <label for="">Nhập lớp học phần từ Excel:</label>
+                    <input type="file" name="file" class="">
+                </div>
+                <div class="col-md-4">
+                    <input type="submit" value="Tải lên" class="w3-margin btn btn-outline-info">
+                </div>
+            </div>
+        </form>
+    </div>
+<hr />
+
+<div class="row">
+    <div class=" w3-card w3-white container w3-round-large" style="width:60%">
+        <form asp-action="Create">
+            <h4 class="w3-center">Nhập thông tin lớp học phần</h4>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-row" style="display: flex; justify-content: center;">
+                <div class="form-group col-md-4" >
+                    <label class="control-label">Mã lớp học phần</label>
+                    <input asp-for="MaLopHocPhan" class="form-control" />
+                    <span asp-validation-for="MaLopHocPhan" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="control-label">Tên lớp học phần</label>
+                    <input asp-for="TenLopHocPhan" class="form-control" />
+                    <span asp-validation-for="TenLopHocPhan" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-2">
+                    <label class="control-label">Học kỳ</label>
+                    <select asp-for="MaHocKy" class ="form-control" asp-items="ViewBag.MaHocKy"></select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="control-label">Học phần</label>
+                    <select asp-for="MaHocPhan" class ="form-control" asp-items="ViewBag.MaHocPhan"></select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="control-label">Giảng viên</label>
+                    <select asp-for="MaGiangVien" class ="form-control" asp-items="ViewBag.MaGiangVien"></select>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-outline-info" /> |
+                <a asp-action="Index">Trở về</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

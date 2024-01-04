@@ -1,0 +1,57 @@
+@model QuanLyDiem.Models.LopHocPhan
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Xóa lớp học phần</h3>
+
+<div>
+    <hr />
+    <dl class="w3-card w3-white container w3-round-large" style="width:50%;">
+        <div class="row">
+            <dt class = "col-sm-6">
+                Mã lớp học phần
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.MaLopHocPhan)
+            </dd>
+            <dt class = "col-sm-6">
+                Tên lớp học phần
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.TenLopHocPhan)
+            </dd>
+        </div>
+        <div class="row">
+            <dt class = "col-sm-6">
+                Học kỳ
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.HocKy.TenHocKy)
+            </dd>
+        </div>
+        <div class="row">
+            <dt class = "col-sm-6">
+                Học phần
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.HocPhan.TenHocPhan)
+            </dd>
+        </div>
+        <div class="row">
+            <dt class = "col-sm-6">
+                Giảng viên
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.GiangVien.TenGiangVien)
+            </dd>
+        </div>
+    </dl>
+    <h4 class="w3-center">Bạn có chắc chắn muốn xóa lớp học phần này?</h4>
+    <form class="w3-center" asp-action="Delete">
+        <input type="hidden" asp-for="MaLopHocPhan" />
+        <input type="submit" value="Xóa" class="btn btn-danger w3-medium" /> |
+        <a asp-action="Index">Hủy</a>
+    </form>
+</div>

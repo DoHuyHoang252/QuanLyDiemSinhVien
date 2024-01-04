@@ -1,0 +1,98 @@
+@model IEnumerable<QuanLyDiem.Models.HocKy>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Danh sách học kỳ</h3>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="w3-right"><a class="btn w3-round-large w3-medium btn btn-outline-info" asp-action="Create">Tạo mới học kỳ</a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="pageSizeDropdown">Số bản ghi trên mỗi trang:</label>
+                        @Html.DropDownList("PageSize", new List<SelectListItem>
+                        {
+                        new SelectListItem { Text = "5", Value = "5" },
+                        new SelectListItem { Text = "10", Value = "10" },
+                        new SelectListItem { Text = "20", Value = "20" },
+                        new SelectListItem { Text = "50", Value = "50" },
+                        new SelectListItem { Text = "Tất cả", Value = "-1" },
+                        // Thêm các tùy chọn khác tùy theo yêu cầu của bạn
+                        }, new { id = "pageSizeDropdown", @class = "w3-border-blue", onchange = "changePageSize()"})
+                    </div>
+                    <div class="col-md-6">
+                        <div class="w3-right">
+                            <form asp-controller="HocKy" asp-action="Index" method="get">
+                                <p>
+                                    <input class="btn w3-text-black btn-outline-info w3-medium w3-round-large" type="text" name="searchText" />
+                                    <input class="btn btn-outline-info w3-medium w3-round-large" type="submit" value="Tìm kiếm" />
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>   
+                <div class="table-responsive m-t-40 ">
+                    <table id="myTable" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable(0)" class="column_name" style="width:42%">
+                                    Tên học kỳ
+                                </th>
+                                <th onclick="sortTable(1)" class="column_name" style="width:42%">
+                                    Khóa học
+                                </th>
+                                <th style="width:16%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                    @foreach (var item in Model) {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TenHocKy)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.KhoaHoc.TenKhoaHoc)
+                                </td>
+                            <td>
+                                <a class="btn btn-outline-info w3-medium w3-round-large" asp-action="Edit" asp-route-id="@item.MaHocKy">Sửa</a>
+                                <a class="btn btn-outline-info w3-medium w3-round-large" asp-action="Delete"  asp-route-id="@item.MaHocKy">Xóa</a>
+                            </td>
+                            </tr>
+                    }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination-container">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page, pageSize = ViewBag.PageSize }), new X.PagedList.Web.Common.PagedListRenderOptions { LiElementClasses = new[] { "page-item" }, PageClasses = new[] { "page-link" } })
+                        </ul>
+                    </nav>
+                </div>            
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function searchData() {
+        var searchTerm = document.getElementById("searchBox").value;
+        var selectedValue = document.getElementById("pageSizeDropdown").value;
+        window.location.href = "/HocKy/Index?page=1&pageSize=" + selectedValue + "&search=" + encodeURIComponent(searchTerm);
+    }
+
+    function changePageSize() {
+        var selectedValue = document.getElementById("pageSizeDropdown").value;
+        window.location.href = "/HocKy/Index?page=1&pageSize=" + selectedValue ;
+    }
+</script>
+

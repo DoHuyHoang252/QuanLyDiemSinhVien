@@ -1,0 +1,44 @@
+@model QuanLyDiem.Models.HocPhan
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h3>Sửa thông tin học phần</h3>
+<hr>
+<div class="row">
+    <div class=" w3-card w3-white container w3-round-large" style="width:60%">
+        <form asp-action="Edit">
+            <h4 class="w3-center">Thông tin học phần</h4>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaHocPhan" />
+            <div class="form-row" style="display: flex; justify-content: center;">
+                <div class="form-group col-md-6" >
+                    <label class="control-label">Tên học phần</label>
+                    <input asp-for="TenHocPhan" class="form-control" />
+                    <span asp-validation-for="TenHocPhan" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3" >
+                    <label class="control-label">Số tín chỉ</label>
+                    <input asp-for="SoTinChi" class="form-control" />
+                    <span asp-validation-for="SoTinChi" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row" style="display: flex; justify-content: center;">
+                <div class="form-group col-md-6">
+                    <label class="control-label">Chuyên ngành</label>
+                    <select asp-for="MaChuyenNganh" class="form-control" asp-items="ViewBag.MaChuyenNganh"></select>
+                    <span asp-validation-for="MaChuyenNganh" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn w3-medium btn-outline-info" /> |
+                <a asp-action="Index">Trở về</a>
+            </div>
+        </form>
+    </div>
+</div>  
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

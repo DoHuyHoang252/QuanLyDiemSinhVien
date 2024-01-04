@@ -1,0 +1,41 @@
+@model QuanLyDiem.Models.User
+
+@{
+    ViewData["Title"] = "Profile";
+}
+<h3>Hồ sơ người dùng</h3>
+
+<div>
+    <hr />
+    <dl class="w3-card w3-white container w3-round-large" style="width:60%">
+        <div class="row">
+            <dt class = "col-sm-6">
+                Username
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.username)
+            </dd>
+            <dt class = "col-sm-6">
+                Password
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.password)
+            </dd>
+        </div>
+        <div class="row">
+            <dt class = "col-sm-6">
+                Họ
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.lastName)
+            </dd>
+            <dt class = "col-sm-6">
+                Tên
+            </dt>
+            <dd class = "col-sm-6">
+                @Html.DisplayFor(model => model.firstName)
+            </dd>
+            <a class="btn btn-outline-info w3-medium w3-round-large " style="width: 10%;" asp-action="Index">Trở về</a>
+        </div>
+    </dl>
+</div>
